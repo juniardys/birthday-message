@@ -15,8 +15,6 @@ const responseError = async (res, error, defaultPayload = '') => {
   }
 
   if (error) {
-
-    console.log(error);
     if (error instanceof ApiErrorException) {
       ({ message, statusCode } = error);
     }
