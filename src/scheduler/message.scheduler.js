@@ -2,6 +2,7 @@ const moment = require('moment');
 const { Users, Location, Jobs } = require('@src/models');
 const constants = require('@src/utils/constants');
 const { default: axios } = require("axios");
+const { Op } = require('sequelize');
 
 const prepareBirthdayMessage = async () => {
   // define min & max offset
